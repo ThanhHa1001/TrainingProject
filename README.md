@@ -2,23 +2,6 @@
 
 ### BT_QLDT
 
-[Projects](#Projects)
-- [0. Java core - ReTraining project](#projects)
-    
-[Descriptions](#descriptions)
-- [0. Java core](#0-java-core)
-- [1. Exe1](#1-exe1)
-- [2. Exe2](#2-exe2)
-
-#### Projects
-- [Java core - ReTraining project](https://github.com/ThanhHa1001/TrainingProject/tree/exe0)
-
-
-#### Descriptions
-##### 0. Java core
-- [Document Java core 1](https://drive.google.com/open?id=1NwTw2P7mH_-gIQdsh9f37otidRkP_kk_)
-- [Document Java core 2](https://drive.google.com/open?id=1GkzuGHqjqjh8V1hb5enPYLluNcvdmuWd)
-
 #### 1. Exe1 
 Viết một chương trình Java (Java console) cho phép các giáo vụ quản lý việc đào tạo ở một trung tâm đào tạo theo các mô tả như sau:
 
