@@ -1,10 +1,12 @@
-<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 https://maven.apache.org/xsd/maven-4.0.0.xsd">
-  <modelVersion>4.0.0</modelVersion>
-  <groupId>com.thea</groupId>
-  <artifactId>BT_QLDT_DB</artifactId>
-  <version>0.0.1-SNAPSHOT</version>
-  
-  <properties>
+<project xmlns="http://maven.apache.org/POM/4.0.0"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 https://maven.apache.org/xsd/maven-4.0.0.xsd">
+	<modelVersion>4.0.0</modelVersion>
+	<groupId>com.thea</groupId>
+	<artifactId>BT_QLDT_DB</artifactId>
+	<version>0.0.1-SNAPSHOT</version>
+
+	<properties>
 		<project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
 		<logback.version>1.0.13</logback.version>
 	</properties>
@@ -22,4 +24,14 @@
 			</plugin>
 		</plugins>
 	</build>
+
+	<dependencies>
+		<!-- Logback natively implements the SLF4J API. -->
+		<dependency>
+			<groupId>ch.qos.logback</groupId>
+			<artifactId>logback-classic</artifactId>
+			<!-- <version>1.0.13</version> -->
+			<version>${logback.version}</version>
+		</dependency>
+	</dependencies>
 </project>
