@@ -1,0 +1,531 @@
+2020-05-18 10:48:35,581 DEBUG [main] r.i.ClassroomRepository [ClassroomRepository.java:36] findAll() sql = SELECT c.*, CONCAT(m.first_name, ' ' , m.last_name) as ministry_name FROM classroom c INNER JOIN ministry m ON c.ministry_id = m.id 
+2020-05-18 10:54:46,872 DEBUG [main] r.i.ClassroomRepository [ClassroomRepository.java:34] findAll() sql = SELECT c.*, CONCAT(m.first_name, ' ', m.last_name) as ministry_name FROM classroom c INNER JOIN ministry m ON c.ministry_id = m.id
+2020-05-18 15:29:31,808 DEBUG [main] r.i.ClassroomRepository [ClassroomRepository.java:36] findAll() sql = SELECT c.*, CONCAT(m.first_name, ' ', m.last_name) as ministry_name FROM classroom c INNER JOIN ministry m ON c.ministry_id = m.id
+2020-05-18 15:30:04,273 DEBUG [main] r.i.ClassroomRepository [ClassroomRepository.java:36] findAll() sql = SELECT c.*, CONCAT(m.first_name, ' ', m.last_name) as ministry_name FROM classroom c INNER JOIN ministry m ON c.ministry_id = m.id
+2020-05-18 15:30:17,032 DEBUG [main] r.i.ClassroomRepository [ClassroomRepository.java:36] findAll() sql = SELECT c.*, CONCAT(m.first_name, ' ', m.last_name) as ministry_name FROM classroom c INNER JOIN ministry m ON c.ministry_id = m.id
+2020-05-18 15:30:17,185 ERROR [main] r.i.ClassroomRepository [ClassroomRepository.java:240] delete() method
+2020-05-18 15:32:00,376 DEBUG [main] r.i.ClassroomRepository [ClassroomRepository.java:36] findAll() sql = SELECT c.*, CONCAT(m.first_name, ' ', m.last_name) as ministry_name FROM classroom c INNER JOIN ministry m ON c.ministry_id = m.id
+2020-05-18 17:35:49,416 DEBUG [main] r.i.ClassroomRepository [ClassroomRepository.java:36] findAll() sql = SELECT c.*, CONCAT(m.first_name, ' ', m.last_name) as ministry_name FROM classroom c INNER JOIN ministry m ON c.ministry_id = m.id
+2020-05-18 17:35:49,501 ERROR [main] r.i.ClassroomRepository [ClassroomRepository.java:281] findByName() method
+java.sql.SQLSyntaxErrorException: Unknown column 'c.name' in 'where clause'
+	at com.mysql.cj.jdbc.exceptions.SQLError.createSQLException(SQLError.java:120) ~[mysql-connector-java-8.0.16.jar:8.0.16]
+	at com.mysql.cj.jdbc.exceptions.SQLError.createSQLException(SQLError.java:97) ~[mysql-connector-java-8.0.16.jar:8.0.16]
+	at com.mysql.cj.jdbc.exceptions.SQLExceptionsMapping.translateException(SQLExceptionsMapping.java:122) ~[mysql-connector-java-8.0.16.jar:8.0.16]
+	at com.mysql.cj.jdbc.ClientPreparedStatement.executeInternal(ClientPreparedStatement.java:955) ~[mysql-connector-java-8.0.16.jar:8.0.16]
+	at com.mysql.cj.jdbc.ClientPreparedStatement.executeQuery(ClientPreparedStatement.java:1005) ~[mysql-connector-java-8.0.16.jar:8.0.16]
+	at repository.impl.ClassroomRepository.isClassroomExist(ClassroomRepository.java:274) ~[classes/:na]
+	at service.impl.ClassroomService.insert(ClassroomService.java:24) [classes/:na]
+	at controller.ClassroomController.main(ClassroomController.java:30) [classes/:na]
+2020-05-18 17:35:49,543 ERROR [main] r.i.ClassroomRepository [ClassroomRepository.java:160] insert() method 
+java.sql.SQLSyntaxErrorException: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '(name, ministry_id, create_at, created_by) VALUES ('12A4', 1, 'java.text.SimpleD' at line 1
+	at com.mysql.cj.jdbc.exceptions.SQLError.createSQLException(SQLError.java:120) ~[mysql-connector-java-8.0.16.jar:8.0.16]
+	at com.mysql.cj.jdbc.exceptions.SQLError.createSQLException(SQLError.java:97) ~[mysql-connector-java-8.0.16.jar:8.0.16]
+	at com.mysql.cj.jdbc.exceptions.SQLExceptionsMapping.translateException(SQLExceptionsMapping.java:122) ~[mysql-connector-java-8.0.16.jar:8.0.16]
+	at com.mysql.cj.jdbc.ClientPreparedStatement.executeInternal(ClientPreparedStatement.java:955) ~[mysql-connector-java-8.0.16.jar:8.0.16]
+	at com.mysql.cj.jdbc.ClientPreparedStatement.executeUpdateInternal(ClientPreparedStatement.java:1094) ~[mysql-connector-java-8.0.16.jar:8.0.16]
+	at com.mysql.cj.jdbc.ClientPreparedStatement.executeUpdateInternal(ClientPreparedStatement.java:1042) ~[mysql-connector-java-8.0.16.jar:8.0.16]
+	at com.mysql.cj.jdbc.ClientPreparedStatement.executeLargeUpdate(ClientPreparedStatement.java:1345) ~[mysql-connector-java-8.0.16.jar:8.0.16]
+	at com.mysql.cj.jdbc.ClientPreparedStatement.executeUpdate(ClientPreparedStatement.java:1027) ~[mysql-connector-java-8.0.16.jar:8.0.16]
+	at repository.impl.ClassroomRepository.insert(ClassroomRepository.java:156) ~[classes/:na]
+	at service.impl.ClassroomService.insert(ClassroomService.java:27) [classes/:na]
+	at controller.ClassroomController.main(ClassroomController.java:30) [classes/:na]
+2020-05-18 17:36:12,877 DEBUG [main] r.i.ClassroomRepository [ClassroomRepository.java:36] findAll() sql = SELECT c.*, CONCAT(m.first_name, ' ', m.last_name) as ministry_name FROM classroom c INNER JOIN ministry m ON c.ministry_id = m.id
+2020-05-18 17:36:12,961 ERROR [main] r.i.ClassroomRepository [ClassroomRepository.java:281] findByName() method
+java.sql.SQLSyntaxErrorException: Unknown column 'c.name' in 'where clause'
+	at com.mysql.cj.jdbc.exceptions.SQLError.createSQLException(SQLError.java:120) ~[mysql-connector-java-8.0.16.jar:8.0.16]
+	at com.mysql.cj.jdbc.exceptions.SQLError.createSQLException(SQLError.java:97) ~[mysql-connector-java-8.0.16.jar:8.0.16]
+	at com.mysql.cj.jdbc.exceptions.SQLExceptionsMapping.translateException(SQLExceptionsMapping.java:122) ~[mysql-connector-java-8.0.16.jar:8.0.16]
+	at com.mysql.cj.jdbc.ClientPreparedStatement.executeInternal(ClientPreparedStatement.java:955) ~[mysql-connector-java-8.0.16.jar:8.0.16]
+	at com.mysql.cj.jdbc.ClientPreparedStatement.executeQuery(ClientPreparedStatement.java:1005) ~[mysql-connector-java-8.0.16.jar:8.0.16]
+	at repository.impl.ClassroomRepository.isClassroomExist(ClassroomRepository.java:274) ~[classes/:na]
+	at service.impl.ClassroomService.insert(ClassroomService.java:24) [classes/:na]
+	at controller.ClassroomController.main(ClassroomController.java:30) [classes/:na]
+2020-05-18 17:36:13,003 ERROR [main] r.i.ClassroomRepository [ClassroomRepository.java:160] insert() method 
+java.sql.SQLSyntaxErrorException: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '(name, ministry_id, create_at, created_by) VALUES ('12A4', 1, 'java.text.SimpleD' at line 1
+	at com.mysql.cj.jdbc.exceptions.SQLError.createSQLException(SQLError.java:120) ~[mysql-connector-java-8.0.16.jar:8.0.16]
+	at com.mysql.cj.jdbc.exceptions.SQLError.createSQLException(SQLError.java:97) ~[mysql-connector-java-8.0.16.jar:8.0.16]
+	at com.mysql.cj.jdbc.exceptions.SQLExceptionsMapping.translateException(SQLExceptionsMapping.java:122) ~[mysql-connector-java-8.0.16.jar:8.0.16]
+	at com.mysql.cj.jdbc.ClientPreparedStatement.executeInternal(ClientPreparedStatement.java:955) ~[mysql-connector-java-8.0.16.jar:8.0.16]
+	at com.mysql.cj.jdbc.ClientPreparedStatement.executeUpdateInternal(ClientPreparedStatement.java:1094) ~[mysql-connector-java-8.0.16.jar:8.0.16]
+	at com.mysql.cj.jdbc.ClientPreparedStatement.executeUpdateInternal(ClientPreparedStatement.java:1042) ~[mysql-connector-java-8.0.16.jar:8.0.16]
+	at com.mysql.cj.jdbc.ClientPreparedStatement.executeLargeUpdate(ClientPreparedStatement.java:1345) ~[mysql-connector-java-8.0.16.jar:8.0.16]
+	at com.mysql.cj.jdbc.ClientPreparedStatement.executeUpdate(ClientPreparedStatement.java:1027) ~[mysql-connector-java-8.0.16.jar:8.0.16]
+	at repository.impl.ClassroomRepository.insert(ClassroomRepository.java:156) ~[classes/:na]
+	at service.impl.ClassroomService.insert(ClassroomService.java:27) [classes/:na]
+	at controller.ClassroomController.main(ClassroomController.java:30) [classes/:na]
+2020-05-18 17:37:39,622 DEBUG [main] r.i.ClassroomRepository [ClassroomRepository.java:36] findAll() sql = SELECT c.*, CONCAT(m.first_name, ' ', m.last_name) as ministry_name FROM classroom c INNER JOIN ministry m ON c.ministry_id = m.id
+2020-05-18 17:37:39,741 ERROR [main] r.i.ClassroomRepository [ClassroomRepository.java:160] insert() method 
+java.sql.SQLSyntaxErrorException: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '(name, ministry_id, create_at, created_by) VALUES ('12A4', 1, 'java.text.SimpleD' at line 1
+	at com.mysql.cj.jdbc.exceptions.SQLError.createSQLException(SQLError.java:120) ~[mysql-connector-java-8.0.16.jar:8.0.16]
+	at com.mysql.cj.jdbc.exceptions.SQLError.createSQLException(SQLError.java:97) ~[mysql-connector-java-8.0.16.jar:8.0.16]
+	at com.mysql.cj.jdbc.exceptions.SQLExceptionsMapping.translateException(SQLExceptionsMapping.java:122) ~[mysql-connector-java-8.0.16.jar:8.0.16]
+	at com.mysql.cj.jdbc.ClientPreparedStatement.executeInternal(ClientPreparedStatement.java:955) ~[mysql-connector-java-8.0.16.jar:8.0.16]
+	at com.mysql.cj.jdbc.ClientPreparedStatement.executeUpdateInternal(ClientPreparedStatement.java:1094) ~[mysql-connector-java-8.0.16.jar:8.0.16]
+	at com.mysql.cj.jdbc.ClientPreparedStatement.executeUpdateInternal(ClientPreparedStatement.java:1042) ~[mysql-connector-java-8.0.16.jar:8.0.16]
+	at com.mysql.cj.jdbc.ClientPreparedStatement.executeLargeUpdate(ClientPreparedStatement.java:1345) ~[mysql-connector-java-8.0.16.jar:8.0.16]
+	at com.mysql.cj.jdbc.ClientPreparedStatement.executeUpdate(ClientPreparedStatement.java:1027) ~[mysql-connector-java-8.0.16.jar:8.0.16]
+	at repository.impl.ClassroomRepository.insert(ClassroomRepository.java:156) ~[classes/:na]
+	at service.impl.ClassroomService.insert(ClassroomService.java:27) [classes/:na]
+	at controller.ClassroomController.main(ClassroomController.java:30) [classes/:na]
+2020-05-18 17:39:01,464 DEBUG [main] r.i.ClassroomRepository [ClassroomRepository.java:36] findAll() sql = SELECT c.*, CONCAT(m.first_name, ' ', m.last_name) as ministry_name FROM classroom c INNER JOIN ministry m ON c.ministry_id = m.id
+2020-05-18 17:39:01,580 ERROR [main] r.i.ClassroomRepository [ClassroomRepository.java:160] insert() method 
+java.sql.SQLSyntaxErrorException: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '(name, ministry_id, created_at, created_by) VALUES ('12A4', 1, 'java.text.Simple' at line 1
+	at com.mysql.cj.jdbc.exceptions.SQLError.createSQLException(SQLError.java:120) ~[mysql-connector-java-8.0.16.jar:8.0.16]
+	at com.mysql.cj.jdbc.exceptions.SQLError.createSQLException(SQLError.java:97) ~[mysql-connector-java-8.0.16.jar:8.0.16]
+	at com.mysql.cj.jdbc.exceptions.SQLExceptionsMapping.translateException(SQLExceptionsMapping.java:122) ~[mysql-connector-java-8.0.16.jar:8.0.16]
+	at com.mysql.cj.jdbc.ClientPreparedStatement.executeInternal(ClientPreparedStatement.java:955) ~[mysql-connector-java-8.0.16.jar:8.0.16]
+	at com.mysql.cj.jdbc.ClientPreparedStatement.executeUpdateInternal(ClientPreparedStatement.java:1094) ~[mysql-connector-java-8.0.16.jar:8.0.16]
+	at com.mysql.cj.jdbc.ClientPreparedStatement.executeUpdateInternal(ClientPreparedStatement.java:1042) ~[mysql-connector-java-8.0.16.jar:8.0.16]
+	at com.mysql.cj.jdbc.ClientPreparedStatement.executeLargeUpdate(ClientPreparedStatement.java:1345) ~[mysql-connector-java-8.0.16.jar:8.0.16]
+	at com.mysql.cj.jdbc.ClientPreparedStatement.executeUpdate(ClientPreparedStatement.java:1027) ~[mysql-connector-java-8.0.16.jar:8.0.16]
+	at repository.impl.ClassroomRepository.insert(ClassroomRepository.java:156) ~[classes/:na]
+	at service.impl.ClassroomService.insert(ClassroomService.java:27) [classes/:na]
+	at controller.ClassroomController.main(ClassroomController.java:30) [classes/:na]
+2020-05-18 17:39:49,915 DEBUG [main] r.i.ClassroomRepository [ClassroomRepository.java:36] findAll() sql = SELECT c.*, CONCAT(m.first_name, ' ', m.last_name) as ministry_name FROM classroom c INNER JOIN ministry m ON c.ministry_id = m.id
+2020-05-18 17:41:35,478 ERROR [main] r.i.ClassroomRepository [ClassroomRepository.java:160] insert() method 
+java.sql.SQLSyntaxErrorException: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '(name, ministry_id, created_at, created_by) VALUES ('12A4', 1, 'java.text.Simple' at line 1
+	at com.mysql.cj.jdbc.exceptions.SQLError.createSQLException(SQLError.java:120) ~[mysql-connector-java-8.0.16.jar:8.0.16]
+	at com.mysql.cj.jdbc.exceptions.SQLError.createSQLException(SQLError.java:97) ~[mysql-connector-java-8.0.16.jar:8.0.16]
+	at com.mysql.cj.jdbc.exceptions.SQLExceptionsMapping.translateException(SQLExceptionsMapping.java:122) ~[mysql-connector-java-8.0.16.jar:8.0.16]
+	at com.mysql.cj.jdbc.ClientPreparedStatement.executeInternal(ClientPreparedStatement.java:955) ~[mysql-connector-java-8.0.16.jar:8.0.16]
+	at com.mysql.cj.jdbc.ClientPreparedStatement.executeUpdateInternal(ClientPreparedStatement.java:1094) ~[mysql-connector-java-8.0.16.jar:8.0.16]
+	at com.mysql.cj.jdbc.ClientPreparedStatement.executeUpdateInternal(ClientPreparedStatement.java:1042) ~[mysql-connector-java-8.0.16.jar:8.0.16]
+	at com.mysql.cj.jdbc.ClientPreparedStatement.executeLargeUpdate(ClientPreparedStatement.java:1345) ~[mysql-connector-java-8.0.16.jar:8.0.16]
+	at com.mysql.cj.jdbc.ClientPreparedStatement.executeUpdate(ClientPreparedStatement.java:1027) ~[mysql-connector-java-8.0.16.jar:8.0.16]
+	at repository.impl.ClassroomRepository.insert(ClassroomRepository.java:156) ~[classes/:na]
+	at service.impl.ClassroomService.insert(ClassroomService.java:27) [classes/:na]
+	at controller.ClassroomController.main(ClassroomController.java:30) [classes/:na]
+2020-05-18 17:42:22,354 DEBUG [main] r.i.ClassroomRepository [ClassroomRepository.java:36] findAll() sql = SELECT c.*, CONCAT(m.first_name, ' ', m.last_name) as ministry_name FROM classroom c INNER JOIN ministry m ON c.ministry_id = m.id
+2020-05-18 17:42:22,489 ERROR [main] r.i.ClassroomRepository [ClassroomRepository.java:161] insert() method 
+java.sql.SQLSyntaxErrorException: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '(name, ministry_id, created_at, created_by) VALUES ('12A4', 1, 'java.text.Simple' at line 1
+	at com.mysql.cj.jdbc.exceptions.SQLError.createSQLException(SQLError.java:120) ~[mysql-connector-java-8.0.16.jar:8.0.16]
+	at com.mysql.cj.jdbc.exceptions.SQLError.createSQLException(SQLError.java:97) ~[mysql-connector-java-8.0.16.jar:8.0.16]
+	at com.mysql.cj.jdbc.exceptions.SQLExceptionsMapping.translateException(SQLExceptionsMapping.java:122) ~[mysql-connector-java-8.0.16.jar:8.0.16]
+	at com.mysql.cj.jdbc.ClientPreparedStatement.executeInternal(ClientPreparedStatement.java:955) ~[mysql-connector-java-8.0.16.jar:8.0.16]
+	at com.mysql.cj.jdbc.ClientPreparedStatement.executeUpdateInternal(ClientPreparedStatement.java:1094) ~[mysql-connector-java-8.0.16.jar:8.0.16]
+	at com.mysql.cj.jdbc.ClientPreparedStatement.executeUpdateInternal(ClientPreparedStatement.java:1042) ~[mysql-connector-java-8.0.16.jar:8.0.16]
+	at com.mysql.cj.jdbc.ClientPreparedStatement.executeLargeUpdate(ClientPreparedStatement.java:1345) ~[mysql-connector-java-8.0.16.jar:8.0.16]
+	at com.mysql.cj.jdbc.ClientPreparedStatement.executeUpdate(ClientPreparedStatement.java:1027) ~[mysql-connector-java-8.0.16.jar:8.0.16]
+	at repository.impl.ClassroomRepository.insert(ClassroomRepository.java:157) ~[classes/:na]
+	at service.impl.ClassroomService.insert(ClassroomService.java:27) [classes/:na]
+	at controller.ClassroomController.main(ClassroomController.java:30) [classes/:na]
+2020-05-18 17:43:05,831 DEBUG [main] r.i.ClassroomRepository [ClassroomRepository.java:36] findAll() sql = SELECT c.*, CONCAT(m.first_name, ' ', m.last_name) as ministry_name FROM classroom c INNER JOIN ministry m ON c.ministry_id = m.id
+2020-05-18 17:43:05,945 ERROR [main] r.i.ClassroomRepository [ClassroomRepository.java:161] insert() method 
+java.sql.SQLSyntaxErrorException: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '(name, ministry_id, created_at, created_by) VALUES ('12A4', 1, '2020-05-18 17:43' at line 1
+	at com.mysql.cj.jdbc.exceptions.SQLError.createSQLException(SQLError.java:120) ~[mysql-connector-java-8.0.16.jar:8.0.16]
+	at com.mysql.cj.jdbc.exceptions.SQLError.createSQLException(SQLError.java:97) ~[mysql-connector-java-8.0.16.jar:8.0.16]
+	at com.mysql.cj.jdbc.exceptions.SQLExceptionsMapping.translateException(SQLExceptionsMapping.java:122) ~[mysql-connector-java-8.0.16.jar:8.0.16]
+	at com.mysql.cj.jdbc.ClientPreparedStatement.executeInternal(ClientPreparedStatement.java:955) ~[mysql-connector-java-8.0.16.jar:8.0.16]
+	at com.mysql.cj.jdbc.ClientPreparedStatement.executeUpdateInternal(ClientPreparedStatement.java:1094) ~[mysql-connector-java-8.0.16.jar:8.0.16]
+	at com.mysql.cj.jdbc.ClientPreparedStatement.executeUpdateInternal(ClientPreparedStatement.java:1042) ~[mysql-connector-java-8.0.16.jar:8.0.16]
+	at com.mysql.cj.jdbc.ClientPreparedStatement.executeLargeUpdate(ClientPreparedStatement.java:1345) ~[mysql-connector-java-8.0.16.jar:8.0.16]
+	at com.mysql.cj.jdbc.ClientPreparedStatement.executeUpdate(ClientPreparedStatement.java:1027) ~[mysql-connector-java-8.0.16.jar:8.0.16]
+	at repository.impl.ClassroomRepository.insert(ClassroomRepository.java:157) ~[classes/:na]
+	at service.impl.ClassroomService.insert(ClassroomService.java:27) [classes/:na]
+	at controller.ClassroomController.main(ClassroomController.java:30) [classes/:na]
+2020-05-18 17:51:55,230 DEBUG [main] r.i.ClassroomRepository [ClassroomRepository.java:37] findAll() sql = SELECT c.*, CONCAT(m.first_name, ' ', m.last_name) as ministry_name FROM classroom c INNER JOIN ministry m ON c.ministry_id = m.id
+2020-05-18 17:52:52,979 DEBUG [main] r.i.ClassroomRepository [ClassroomRepository.java:38] findAll() sql = SELECT c.*, CONCAT(m.first_name, ' ', m.last_name) as ministry_name FROM classroom c INNER JOIN ministry m ON c.ministry_id = m.id
+2020-05-18 17:52:53,111 ERROR [main] r.i.ClassroomRepository [ClassroomRepository.java:163] insert() method 
+java.sql.SQLSyntaxErrorException: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '(name, ministry_id, created_at, created_by) VALUES ('12A4', 1, '2020-05-18', 'Ch' at line 1
+	at com.mysql.cj.jdbc.exceptions.SQLError.createSQLException(SQLError.java:120) ~[mysql-connector-java-8.0.16.jar:8.0.16]
+	at com.mysql.cj.jdbc.exceptions.SQLError.createSQLException(SQLError.java:97) ~[mysql-connector-java-8.0.16.jar:8.0.16]
+	at com.mysql.cj.jdbc.exceptions.SQLExceptionsMapping.translateException(SQLExceptionsMapping.java:122) ~[mysql-connector-java-8.0.16.jar:8.0.16]
+	at com.mysql.cj.jdbc.ClientPreparedStatement.executeInternal(ClientPreparedStatement.java:955) ~[mysql-connector-java-8.0.16.jar:8.0.16]
+	at com.mysql.cj.jdbc.ClientPreparedStatement.executeUpdateInternal(ClientPreparedStatement.java:1094) ~[mysql-connector-java-8.0.16.jar:8.0.16]
+	at com.mysql.cj.jdbc.ClientPreparedStatement.executeUpdateInternal(ClientPreparedStatement.java:1042) ~[mysql-connector-java-8.0.16.jar:8.0.16]
+	at com.mysql.cj.jdbc.ClientPreparedStatement.executeLargeUpdate(ClientPreparedStatement.java:1345) ~[mysql-connector-java-8.0.16.jar:8.0.16]
+	at com.mysql.cj.jdbc.ClientPreparedStatement.executeUpdate(ClientPreparedStatement.java:1027) ~[mysql-connector-java-8.0.16.jar:8.0.16]
+	at repository.impl.ClassroomRepository.insert(ClassroomRepository.java:159) ~[classes/:na]
+	at service.impl.ClassroomService.insert(ClassroomService.java:27) [classes/:na]
+	at controller.ClassroomController.main(ClassroomController.java:32) [classes/:na]
+2020-05-18 17:54:20,765 DEBUG [main] r.i.ClassroomRepository [ClassroomRepository.java:38] findAll() sql = SELECT c.*, CONCAT(m.first_name, ' ', m.last_name) as ministry_name FROM classroom c INNER JOIN ministry m ON c.ministry_id = m.id
+2020-05-18 17:55:39,944 DEBUG [main] r.i.ClassroomRepository [ClassroomRepository.java:38] findAll() sql = SELECT c.*, CONCAT(m.first_name, ' ', m.last_name) as ministry_name FROM classroom c INNER JOIN ministry m ON c.ministry_id = m.id
+2020-05-18 17:55:57,274 DEBUG [main] r.i.ClassroomRepository [ClassroomRepository.java:38] findAll() sql = SELECT c.*, CONCAT(m.first_name, ' ', m.last_name) as ministry_name FROM classroom c INNER JOIN ministry m ON c.ministry_id = m.id
+2020-05-18 17:55:57,391 ERROR [main] r.i.ClassroomRepository [ClassroomRepository.java:162] insert() method 
+java.sql.SQLSyntaxErrorException: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '(name, ministry_id, created_at, created_by) VALUES ('12A4', 1, '2020-05-18', 'Ch' at line 1
+	at com.mysql.cj.jdbc.exceptions.SQLError.createSQLException(SQLError.java:120) ~[mysql-connector-java-8.0.16.jar:8.0.16]
+	at com.mysql.cj.jdbc.exceptions.SQLError.createSQLException(SQLError.java:97) ~[mysql-connector-java-8.0.16.jar:8.0.16]
+	at com.mysql.cj.jdbc.exceptions.SQLExceptionsMapping.translateException(SQLExceptionsMapping.java:122) ~[mysql-connector-java-8.0.16.jar:8.0.16]
+	at com.mysql.cj.jdbc.ClientPreparedStatement.executeInternal(ClientPreparedStatement.java:955) ~[mysql-connector-java-8.0.16.jar:8.0.16]
+	at com.mysql.cj.jdbc.ClientPreparedStatement.executeUpdateInternal(ClientPreparedStatement.java:1094) ~[mysql-connector-java-8.0.16.jar:8.0.16]
+	at com.mysql.cj.jdbc.ClientPreparedStatement.executeUpdateInternal(ClientPreparedStatement.java:1042) ~[mysql-connector-java-8.0.16.jar:8.0.16]
+	at com.mysql.cj.jdbc.ClientPreparedStatement.executeLargeUpdate(ClientPreparedStatement.java:1345) ~[mysql-connector-java-8.0.16.jar:8.0.16]
+	at com.mysql.cj.jdbc.ClientPreparedStatement.executeUpdate(ClientPreparedStatement.java:1027) ~[mysql-connector-java-8.0.16.jar:8.0.16]
+	at repository.impl.ClassroomRepository.insert(ClassroomRepository.java:158) ~[classes/:na]
+	at service.impl.ClassroomService.insert(ClassroomService.java:27) [classes/:na]
+	at controller.ClassroomController.main(ClassroomController.java:32) [classes/:na]
+2020-05-18 17:59:55,915 DEBUG [main] r.i.ClassroomRepository [ClassroomRepository.java:38] findAll() sql = SELECT c.*, CONCAT(m.first_name, ' ', m.last_name) as ministry_name FROM classroom c INNER JOIN ministry m ON c.ministry_id = m.id
+2020-05-18 18:02:05,751 DEBUG [main] r.i.ClassroomRepository [ClassroomRepository.java:38] findAll() sql = SELECT c.*, CONCAT(m.first_name, ' ', m.last_name) as ministry_name FROM classroom c INNER JOIN ministry m ON c.ministry_id = m.id
+2020-05-18 18:03:15,305 DEBUG [main] r.i.ClassroomRepository [ClassroomRepository.java:38] findAll() sql = SELECT c.*, CONCAT(m.first_name, ' ', m.last_name) as ministry_name FROM classroom c INNER JOIN ministry m ON c.ministry_id = m.id
+2020-05-18 18:04:02,113 DEBUG [main] r.i.ClassroomRepository [ClassroomRepository.java:38] findAll() sql = SELECT c.*, CONCAT(m.first_name, ' ', m.last_name) as ministry_name FROM classroom c INNER JOIN ministry m ON c.ministry_id = m.id
+2020-05-18 18:04:27,454 DEBUG [main] r.i.ClassroomRepository [ClassroomRepository.java:38] findAll() sql = SELECT c.*, CONCAT(m.first_name, ' ', m.last_name) as ministry_name FROM classroom c INNER JOIN ministry m ON c.ministry_id = m.id
+2020-05-18 18:05:36,092 DEBUG [main] r.i.ClassroomRepository [ClassroomRepository.java:38] findAll() sql = SELECT c.*, CONCAT(m.first_name, ' ', m.last_name) as ministry_name FROM classroom c INNER JOIN ministry m ON c.ministry_id = m.id
+2020-05-19 08:20:50,795 ERROR [main] r.i.BaseRepository [BaseRepository.java:22] SQLException
+com.mysql.cj.jdbc.exceptions.CommunicationsException: Communications link failure
+
+The last packet sent successfully to the server was 0 milliseconds ago. The driver has not received any packets from the server.
+	at com.mysql.cj.jdbc.exceptions.SQLError.createCommunicationsException(SQLError.java:174) ~[mysql-connector-java-8.0.16.jar:8.0.16]
+	at com.mysql.cj.jdbc.exceptions.SQLExceptionsMapping.translateException(SQLExceptionsMapping.java:64) ~[mysql-connector-java-8.0.16.jar:8.0.16]
+	at com.mysql.cj.jdbc.ConnectionImpl.createNewIO(ConnectionImpl.java:835) ~[mysql-connector-java-8.0.16.jar:8.0.16]
+	at com.mysql.cj.jdbc.ConnectionImpl.<init>(ConnectionImpl.java:455) ~[mysql-connector-java-8.0.16.jar:8.0.16]
+	at com.mysql.cj.jdbc.ConnectionImpl.getInstance(ConnectionImpl.java:240) ~[mysql-connector-java-8.0.16.jar:8.0.16]
+	at com.mysql.cj.jdbc.NonRegisteringDriver.connect(NonRegisteringDriver.java:199) ~[mysql-connector-java-8.0.16.jar:8.0.16]
+	at java.sql.DriverManager.getConnection(Unknown Source) ~[na:1.8.0_191]
+	at java.sql.DriverManager.getConnection(Unknown Source) ~[na:1.8.0_191]
+	at repository.impl.BaseRepository.getConnection(BaseRepository.java:17) ~[classes/:na]
+	at repository.impl.ClassroomRepository.findAll(ClassroomRepository.java:27) [classes/:na]
+	at service.impl.ClassroomService.findAll(ClassroomService.java:14) [classes/:na]
+	at controller.ClassroomController.main(ClassroomController.java:17) [classes/:na]
+Caused by: com.mysql.cj.exceptions.CJCommunicationsException: Communications link failure
+
+The last packet sent successfully to the server was 0 milliseconds ago. The driver has not received any packets from the server.
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method) ~[na:1.8.0_191]
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance(Unknown Source) ~[na:1.8.0_191]
+	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(Unknown Source) ~[na:1.8.0_191]
+	at java.lang.reflect.Constructor.newInstance(Unknown Source) ~[na:1.8.0_191]
+	at com.mysql.cj.exceptions.ExceptionFactory.createException(ExceptionFactory.java:61) ~[mysql-connector-java-8.0.16.jar:8.0.16]
+	at com.mysql.cj.exceptions.ExceptionFactory.createException(ExceptionFactory.java:105) ~[mysql-connector-java-8.0.16.jar:8.0.16]
+	at com.mysql.cj.exceptions.ExceptionFactory.createException(ExceptionFactory.java:151) ~[mysql-connector-java-8.0.16.jar:8.0.16]
+	at com.mysql.cj.exceptions.ExceptionFactory.createCommunicationsException(ExceptionFactory.java:167) ~[mysql-connector-java-8.0.16.jar:8.0.16]
+	at com.mysql.cj.protocol.a.NativeSocketConnection.connect(NativeSocketConnection.java:91) ~[mysql-connector-java-8.0.16.jar:8.0.16]
+	at com.mysql.cj.NativeSession.connect(NativeSession.java:152) ~[mysql-connector-java-8.0.16.jar:8.0.16]
+	at com.mysql.cj.jdbc.ConnectionImpl.connectOneTryOnly(ConnectionImpl.java:955) ~[mysql-connector-java-8.0.16.jar:8.0.16]
+	at com.mysql.cj.jdbc.ConnectionImpl.createNewIO(ConnectionImpl.java:825) ~[mysql-connector-java-8.0.16.jar:8.0.16]
+	... 9 common frames omitted
+Caused by: java.net.ConnectException: Connection refused: connect
+	at java.net.DualStackPlainSocketImpl.connect0(Native Method) ~[na:1.8.0_191]
+	at java.net.DualStackPlainSocketImpl.socketConnect(Unknown Source) ~[na:1.8.0_191]
+	at java.net.AbstractPlainSocketImpl.doConnect(Unknown Source) ~[na:1.8.0_191]
+	at java.net.AbstractPlainSocketImpl.connectToAddress(Unknown Source) ~[na:1.8.0_191]
+	at java.net.AbstractPlainSocketImpl.connect(Unknown Source) ~[na:1.8.0_191]
+	at java.net.PlainSocketImpl.connect(Unknown Source) ~[na:1.8.0_191]
+	at java.net.SocksSocketImpl.connect(Unknown Source) ~[na:1.8.0_191]
+	at java.net.Socket.connect(Unknown Source) ~[na:1.8.0_191]
+	at com.mysql.cj.protocol.StandardSocketFactory.connect(StandardSocketFactory.java:155) ~[mysql-connector-java-8.0.16.jar:8.0.16]
+	at com.mysql.cj.protocol.a.NativeSocketConnection.connect(NativeSocketConnection.java:65) ~[mysql-connector-java-8.0.16.jar:8.0.16]
+	... 12 common frames omitted
+2020-05-19 08:21:27,563 DEBUG [main] r.i.ClassroomRepository [ClassroomRepository.java:38] findAll() sql = SELECT c.*, CONCAT(m.first_name, ' ', m.last_name) as ministry_name FROM classroom c INNER JOIN ministry m ON c.ministry_id = m.id
+2020-05-19 08:22:10,884 DEBUG [main] r.i.ClassroomRepository [ClassroomRepository.java:38] findAll() sql = SELECT c.*, CONCAT(m.first_name, ' ', m.last_name) as ministry_name FROM classroom c INNER JOIN ministry m ON c.ministry_id = m.id
+2020-05-19 10:21:52,338 DEBUG [main] SignIn [SignIn.java:18] Sign in to your account
+2020-05-19 10:22:49,648 ERROR [main] r.i.StudentRepository [MinistryRepository.java:182] findByEmail() method 
+java.sql.SQLSyntaxErrorException: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'Ministry WHERE email = 'nguyenthuychi@gmail.com'' at line 1
+	at com.mysql.cj.jdbc.exceptions.SQLError.createSQLException(SQLError.java:120) ~[mysql-connector-java-8.0.16.jar:8.0.16]
+	at com.mysql.cj.jdbc.exceptions.SQLError.createSQLException(SQLError.java:97) ~[mysql-connector-java-8.0.16.jar:8.0.16]
+	at com.mysql.cj.jdbc.exceptions.SQLExceptionsMapping.translateException(SQLExceptionsMapping.java:122) ~[mysql-connector-java-8.0.16.jar:8.0.16]
+	at com.mysql.cj.jdbc.ClientPreparedStatement.executeInternal(ClientPreparedStatement.java:955) ~[mysql-connector-java-8.0.16.jar:8.0.16]
+	at com.mysql.cj.jdbc.ClientPreparedStatement.executeQuery(ClientPreparedStatement.java:1005) ~[mysql-connector-java-8.0.16.jar:8.0.16]
+	at repository.impl.MinistryRepository.findByEmail(MinistryRepository.java:158) ~[classes/:na]
+	at service.impl.MinistryService.signIn(MinistryService.java:43) [classes/:na]
+	at SignIn.signIn(SignIn.java:23) [classes/:na]
+	at Main.handleHomeMenu(Main.java:32) [classes/:na]
+	at Main.main(Main.java:18) [classes/:na]
+2020-05-19 10:29:10,966 DEBUG [main] SignIn [SignIn.java:18] Sign in to your account
+2020-05-19 10:29:34,861 ERROR [main] r.i.StudentRepository [MinistryRepository.java:182] findByEmail() method 
+java.sql.SQLSyntaxErrorException: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'Ministry WHERE email = 'nguyenthuychi@gmail.com'' at line 1
+	at com.mysql.cj.jdbc.exceptions.SQLError.createSQLException(SQLError.java:120) ~[mysql-connector-java-8.0.16.jar:8.0.16]
+	at com.mysql.cj.jdbc.exceptions.SQLError.createSQLException(SQLError.java:97) ~[mysql-connector-java-8.0.16.jar:8.0.16]
+	at com.mysql.cj.jdbc.exceptions.SQLExceptionsMapping.translateException(SQLExceptionsMapping.java:122) ~[mysql-connector-java-8.0.16.jar:8.0.16]
+	at com.mysql.cj.jdbc.ClientPreparedStatement.executeInternal(ClientPreparedStatement.java:955) ~[mysql-connector-java-8.0.16.jar:8.0.16]
+	at com.mysql.cj.jdbc.ClientPreparedStatement.executeQuery(ClientPreparedStatement.java:1005) ~[mysql-connector-java-8.0.16.jar:8.0.16]
+	at repository.impl.MinistryRepository.findByEmail(MinistryRepository.java:158) ~[classes/:na]
+	at service.impl.MinistryService.signIn(MinistryService.java:43) [classes/:na]
+	at SignIn.signIn(SignIn.java:23) [classes/:na]
+	at Main.handleHomeMenu(Main.java:32) [classes/:na]
+	at Main.main(Main.java:18) [classes/:na]
+2020-05-19 10:31:17,705 DEBUG [main] SignIn [SignIn.java:18] Sign in to your account
+2020-05-19 10:31:29,217 ERROR [main] r.i.StudentRepository [MinistryRepository.java:182] findByEmail() method 
+java.sql.SQLSyntaxErrorException: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'Ministry WHERE email = 'nguyenthuychi@gmail.com'' at line 1
+	at com.mysql.cj.jdbc.exceptions.SQLError.createSQLException(SQLError.java:120) ~[mysql-connector-java-8.0.16.jar:8.0.16]
+	at com.mysql.cj.jdbc.exceptions.SQLError.createSQLException(SQLError.java:97) ~[mysql-connector-java-8.0.16.jar:8.0.16]
+	at com.mysql.cj.jdbc.exceptions.SQLExceptionsMapping.translateException(SQLExceptionsMapping.java:122) ~[mysql-connector-java-8.0.16.jar:8.0.16]
+	at com.mysql.cj.jdbc.ClientPreparedStatement.executeInternal(ClientPreparedStatement.java:955) ~[mysql-connector-java-8.0.16.jar:8.0.16]
+	at com.mysql.cj.jdbc.ClientPreparedStatement.executeQuery(ClientPreparedStatement.java:1005) ~[mysql-connector-java-8.0.16.jar:8.0.16]
+	at repository.impl.MinistryRepository.findByEmail(MinistryRepository.java:158) ~[classes/:na]
+	at service.impl.MinistryService.signIn(MinistryService.java:43) [classes/:na]
+	at SignIn.signIn(SignIn.java:23) [classes/:na]
+	at Main.handleHomeMenu(Main.java:34) [classes/:na]
+	at Main.main(Main.java:18) [classes/:na]
+2020-05-19 10:32:42,381 DEBUG [main] SignIn [SignIn.java:18] Sign in to your account
+2020-05-19 10:32:52,549 ERROR [main] r.i.StudentRepository [MinistryRepository.java:182] findByEmail() method 
+java.sql.SQLSyntaxErrorException: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'Ministry WHERE email = 'nguyenthuychi@gmail.com'' at line 1
+	at com.mysql.cj.jdbc.exceptions.SQLError.createSQLException(SQLError.java:120) ~[mysql-connector-java-8.0.16.jar:8.0.16]
+	at com.mysql.cj.jdbc.exceptions.SQLError.createSQLException(SQLError.java:97) ~[mysql-connector-java-8.0.16.jar:8.0.16]
+	at com.mysql.cj.jdbc.exceptions.SQLExceptionsMapping.translateException(SQLExceptionsMapping.java:122) ~[mysql-connector-java-8.0.16.jar:8.0.16]
+	at com.mysql.cj.jdbc.ClientPreparedStatement.executeInternal(ClientPreparedStatement.java:955) ~[mysql-connector-java-8.0.16.jar:8.0.16]
+	at com.mysql.cj.jdbc.ClientPreparedStatement.executeQuery(ClientPreparedStatement.java:1005) ~[mysql-connector-java-8.0.16.jar:8.0.16]
+	at repository.impl.MinistryRepository.findByEmail(MinistryRepository.java:158) ~[classes/:na]
+	at service.impl.MinistryService.signIn(MinistryService.java:43) [classes/:na]
+	at SignIn.signIn(SignIn.java:23) [classes/:na]
+	at Main.handleHomeMenu(Main.java:34) [classes/:na]
+	at Main.main(Main.java:18) [classes/:na]
+2020-05-19 10:33:14,046 DEBUG [main] SignIn [SignIn.java:18] Sign in to your account
+2020-05-19 10:33:26,822 ERROR [main] r.i.StudentRepository [MinistryRepository.java:182] findByEmail() method 
+java.sql.SQLSyntaxErrorException: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'Ministry WHERE email = 'nguyenthuychi@gmail.com'' at line 1
+	at com.mysql.cj.jdbc.exceptions.SQLError.createSQLException(SQLError.java:120) ~[mysql-connector-java-8.0.16.jar:8.0.16]
+	at com.mysql.cj.jdbc.exceptions.SQLError.createSQLException(SQLError.java:97) ~[mysql-connector-java-8.0.16.jar:8.0.16]
+	at com.mysql.cj.jdbc.exceptions.SQLExceptionsMapping.translateException(SQLExceptionsMapping.java:122) ~[mysql-connector-java-8.0.16.jar:8.0.16]
+	at com.mysql.cj.jdbc.ClientPreparedStatement.executeInternal(ClientPreparedStatement.java:955) ~[mysql-connector-java-8.0.16.jar:8.0.16]
+	at com.mysql.cj.jdbc.ClientPreparedStatement.executeQuery(ClientPreparedStatement.java:1005) ~[mysql-connector-java-8.0.16.jar:8.0.16]
+	at repository.impl.MinistryRepository.findByEmail(MinistryRepository.java:158) ~[classes/:na]
+	at service.impl.MinistryService.signIn(MinistryService.java:43) [classes/:na]
+	at SignIn.signIn(SignIn.java:23) [classes/:na]
+	at Main.handleHomeMenu(Main.java:34) [classes/:na]
+	at Main.main(Main.java:18) [classes/:na]
+2020-05-19 10:34:19,315 DEBUG [main] SignIn [SignIn.java:18] Sign in to your account
+2020-05-19 10:34:29,178 ERROR [main] r.i.StudentRepository [MinistryRepository.java:182] findByEmail() method 
+java.sql.SQLSyntaxErrorException: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'Ministry WHERE email = 'nguyenthuychi@gmail.com'' at line 1
+	at com.mysql.cj.jdbc.exceptions.SQLError.createSQLException(SQLError.java:120) ~[mysql-connector-java-8.0.16.jar:8.0.16]
+	at com.mysql.cj.jdbc.exceptions.SQLError.createSQLException(SQLError.java:97) ~[mysql-connector-java-8.0.16.jar:8.0.16]
+	at com.mysql.cj.jdbc.exceptions.SQLExceptionsMapping.translateException(SQLExceptionsMapping.java:122) ~[mysql-connector-java-8.0.16.jar:8.0.16]
+	at com.mysql.cj.jdbc.ClientPreparedStatement.executeInternal(ClientPreparedStatement.java:955) ~[mysql-connector-java-8.0.16.jar:8.0.16]
+	at com.mysql.cj.jdbc.ClientPreparedStatement.executeQuery(ClientPreparedStatement.java:1005) ~[mysql-connector-java-8.0.16.jar:8.0.16]
+	at repository.impl.MinistryRepository.findByEmail(MinistryRepository.java:158) ~[classes/:na]
+	at service.impl.MinistryService.signIn(MinistryService.java:43) [classes/:na]
+	at SignIn.signIn(SignIn.java:23) [classes/:na]
+	at Main.handleHomeMenu(Main.java:34) [classes/:na]
+	at Main.main(Main.java:18) [classes/:na]
+2020-05-19 10:36:18,100 DEBUG [main] SignIn [SignIn.java:18] Sign in to your account
+2020-05-19 10:37:54,343 DEBUG [main] SignIn [SignIn.java:18] Sign in to your account
+2020-05-19 10:40:43,103 DEBUG [main] SignIn [SignIn.java:18] Sign in to your account
+2020-05-19 10:43:13,948 DEBUG [main] SignIn [SignIn.java:18] Sign in to your account
+2020-05-19 10:44:42,428 DEBUG [main] SignIn [SignIn.java:24] Sign in success
+2020-05-19 10:49:29,043 DEBUG [main] SignIn [SignIn.java:18] Sign in to your account
+2020-05-19 10:49:43,794 DEBUG [main] SignIn [SignIn.java:24] Sign in success
+2020-05-19 10:51:12,214 DEBUG [main] SignUp [SignUp.java:19] signUp(MinistryService ministryService) - Create your account
+2020-05-19 10:52:24,911 DEBUG [main] SignUp [SignUp.java:67] signUp(AccountService accountService) - phung khanh - linh - phungkhanhlinh@gmail.com - 123456 - 0781452786
+2020-05-19 10:52:24,980 DEBUG [main] SignIn [SignIn.java:37] Sign in to your account: entity.MinistryEntity@7adda9cc
+2020-05-19 10:55:59,326 DEBUG [main] SignIn [SignIn.java:18] Sign in to your account
+2020-05-19 10:56:09,449 DEBUG [main] SignIn [SignIn.java:24] Sign in success
+2020-05-19 11:32:08,888 DEBUG [main] SignIn [SignIn.java:18] Sign in to your account
+2020-05-19 11:32:16,970 DEBUG [main] SignIn [SignIn.java:24] Sign in success
+2020-05-19 11:42:40,675 DEBUG [main] SignIn [SignIn.java:18] Sign in to your account
+2020-05-19 11:42:48,005 DEBUG [main] SignIn [SignIn.java:24] Sign in success
+2020-05-19 11:44:14,181 DEBUG [main] SignIn [SignIn.java:18] Sign in to your account
+2020-05-19 11:44:48,721 DEBUG [main] SignIn [SignIn.java:24] Sign in success
+2020-05-19 11:45:29,281 DEBUG [main] SignIn [SignIn.java:18] Sign in to your account
+2020-05-19 11:46:30,500 DEBUG [main] SignIn [SignIn.java:18] Sign in to your account
+2020-05-19 11:47:05,077 DEBUG [main] SignIn [SignIn.java:24] Sign in success
+2020-05-19 11:48:27,943 DEBUG [main] SignIn [SignIn.java:18] Sign in to your account
+2020-05-19 11:48:34,125 DEBUG [main] SignIn [SignIn.java:28] Sign in failed
+2020-05-19 11:48:40,574 DEBUG [main] SignIn [SignIn.java:18] Sign in to your account
+2020-05-19 11:48:48,324 DEBUG [main] SignIn [SignIn.java:24] Sign in success
+2020-05-19 14:35:38,617 DEBUG [main] SignIn [SignIn.java:18] Sign in to your account
+2020-05-19 14:36:03,220 DEBUG [main] SignIn [SignIn.java:24] Sign in success
+2020-05-19 14:36:07,036 DEBUG [main] r.i.ClassroomRepository [ClassroomRepository.java:38] findAll() sql = SELECT c.*, CONCAT(m.first_name, ' ', m.last_name) as ministry_name FROM classroom c INNER JOIN ministry m ON c.ministry_id = m.id
+2020-05-19 14:38:37,267 DEBUG [main] SignIn [SignIn.java:18] Sign in to your account
+2020-05-19 14:38:46,369 DEBUG [main] SignIn [SignIn.java:24] Sign in success
+2020-05-19 14:38:48,100 DEBUG [main] r.i.ClassroomRepository [ClassroomRepository.java:38] findAll() sql = SELECT c.*, CONCAT(m.first_name, ' ', m.last_name) as ministry_name FROM classroom c INNER JOIN ministry m ON c.ministry_id = m.id
+2020-05-19 14:39:47,623 DEBUG [main] SignIn [SignIn.java:18] Sign in to your account
+2020-05-19 14:40:02,654 DEBUG [main] SignIn [SignIn.java:28] Sign in failed
+2020-05-19 14:40:08,354 DEBUG [main] SignIn [SignIn.java:18] Sign in to your account
+2020-05-19 14:40:18,090 DEBUG [main] SignIn [SignIn.java:24] Sign in success
+2020-05-19 14:40:19,780 DEBUG [main] r.i.ClassroomRepository [ClassroomRepository.java:38] findAll() sql = SELECT c.*, CONCAT(m.first_name, ' ', m.last_name) as ministry_name FROM classroom c INNER JOIN ministry m ON c.ministry_id = m.id
+2020-05-19 14:42:12,201 DEBUG [main] SignIn [SignIn.java:18] Sign in to your account
+2020-05-19 14:42:21,762 DEBUG [main] SignIn [SignIn.java:24] Sign in success
+2020-05-19 14:42:23,167 DEBUG [main] r.i.ClassroomRepository [ClassroomRepository.java:38] findAll() sql = SELECT c.*, CONCAT(m.first_name, ' ', m.last_name) as ministry_name FROM classroom c INNER JOIN ministry m ON c.ministry_id = m.id
+2020-05-19 14:43:39,020 DEBUG [main] SignIn [SignIn.java:18] Sign in to your account
+2020-05-19 14:43:57,780 DEBUG [main] SignIn [SignIn.java:24] Sign in success
+2020-05-19 14:43:59,143 DEBUG [main] r.i.ClassroomRepository [ClassroomRepository.java:38] findAll() sql = SELECT c.*, CONCAT(m.first_name, ' ', m.last_name) as ministry_name FROM classroom c INNER JOIN ministry m ON c.ministry_id = m.id
+2020-05-19 15:15:47,429 DEBUG [main] SignIn [SignIn.java:18] Sign in to your account
+2020-05-19 15:16:04,300 DEBUG [main] SignIn [SignIn.java:24] Sign in success
+2020-05-19 15:16:06,784 DEBUG [main] r.i.ClassroomRepository [ClassroomRepository.java:332] findByMinistryId() sql = SELECT c.*, CONCAT(m.first_name, ' ', m.last_name) as ministry_name FROM classroom c INNER JOIN ministry m ON c.ministry_id = m.id WHERE c.ministry_id = ? 
+2020-05-19 15:56:26,826 DEBUG [main] SignIn [SignIn.java:18] Sign in to your account
+2020-05-19 15:56:37,395 DEBUG [main] SignIn [SignIn.java:24] Sign in success
+2020-05-19 15:56:41,562 DEBUG [main] r.i.ClassroomRepository [ClassroomRepository.java:332] findByMinistryId() sql = SELECT c.*, CONCAT(m.first_name, ' ', m.last_name) as ministry_name FROM classroom c INNER JOIN ministry m ON c.ministry_id = m.id WHERE c.ministry_id = ? 
+2020-05-19 15:56:41,600 ERROR [main] r.i.StudentRepository [StudentRepository.java:324] findAll() method
+java.sql.SQLException: No value specified for parameter 1
+	at com.mysql.cj.jdbc.exceptions.SQLError.createSQLException(SQLError.java:129) ~[mysql-connector-java-8.0.16.jar:8.0.16]
+	at com.mysql.cj.jdbc.exceptions.SQLError.createSQLException(SQLError.java:97) ~[mysql-connector-java-8.0.16.jar:8.0.16]
+	at com.mysql.cj.jdbc.exceptions.SQLExceptionsMapping.translateException(SQLExceptionsMapping.java:122) ~[mysql-connector-java-8.0.16.jar:8.0.16]
+	at com.mysql.cj.jdbc.ClientPreparedStatement.executeQuery(ClientPreparedStatement.java:1022) ~[mysql-connector-java-8.0.16.jar:8.0.16]
+	at repository.impl.StudentRepository.findByMinistryId(StudentRepository.java:295) ~[classes/:na]
+	at service.impl.StudentService.findByMinistryId(StudentService.java:41) [classes/:na]
+	at Main.updateStudent(Main.java:193) [classes/:na]
+	at Main.handleMangerStudentMenu(Main.java:122) [classes/:na]
+	at Main.handleHomeMenu(Main.java:49) [classes/:na]
+	at Main.main(Main.java:24) [classes/:na]
+2020-05-19 15:58:40,913 DEBUG [main] SignIn [SignIn.java:18] Sign in to your account
+2020-05-19 15:58:54,236 DEBUG [main] SignIn [SignIn.java:24] Sign in success
+2020-05-19 16:00:24,166 DEBUG [main] SignIn [SignIn.java:18] Sign in to your account
+2020-05-19 16:00:32,385 DEBUG [main] SignIn [SignIn.java:28] Sign in failed
+2020-05-19 16:00:38,780 DEBUG [main] SignIn [SignIn.java:18] Sign in to your account
+2020-05-19 16:00:54,852 DEBUG [main] SignIn [SignIn.java:24] Sign in success
+2020-05-19 16:01:26,346 DEBUG [main] SignIn [SignIn.java:18] Sign in to your account
+2020-05-19 16:01:37,477 DEBUG [main] SignIn [SignIn.java:24] Sign in success
+2020-05-19 16:02:01,105 DEBUG [main] r.i.ClassroomRepository [ClassroomRepository.java:332] findByMinistryId() sql = SELECT c.*, CONCAT(m.first_name, ' ', m.last_name) as ministry_name FROM classroom c INNER JOIN ministry m ON c.ministry_id = m.id WHERE c.ministry_id = ? 
+2020-05-19 16:03:36,219 DEBUG [main] SignIn [SignIn.java:18] Sign in to your account
+2020-05-19 16:04:29,510 DEBUG [main] SignIn [SignIn.java:24] Sign in success
+2020-05-19 16:04:44,025 DEBUG [main] r.i.ClassroomRepository [ClassroomRepository.java:38] findAll() sql = SELECT c.*, CONCAT(m.first_name, ' ', m.last_name) as ministry_name FROM classroom c INNER JOIN ministry m ON c.ministry_id = m.id
+2020-05-19 16:07:29,695 DEBUG [main] SignIn [SignIn.java:18] Sign in to your account
+2020-05-19 16:07:51,667 DEBUG [main] SignIn [SignIn.java:24] Sign in success
+2020-05-19 16:07:59,858 DEBUG [main] r.i.ClassroomRepository [ClassroomRepository.java:332] findByMinistryId() sql = SELECT c.*, CONCAT(m.first_name, ' ', m.last_name) as ministry_name FROM classroom c INNER JOIN ministry m ON c.ministry_id = m.id WHERE c.ministry_id = ? 
+2020-05-19 16:09:11,442 DEBUG [main] SignIn [SignIn.java:18] Sign in to your account
+2020-05-19 16:09:20,834 DEBUG [main] SignIn [SignIn.java:24] Sign in success
+2020-05-19 16:09:26,304 DEBUG [main] r.i.ClassroomRepository [ClassroomRepository.java:332] findByMinistryId() sql = SELECT c.*, CONCAT(m.first_name, ' ', m.last_name) as ministry_name FROM classroom c INNER JOIN ministry m ON c.ministry_id = m.id WHERE c.ministry_id = ? 
+2020-05-19 16:09:43,356 DEBUG [main] r.i.ClassroomRepository [ClassroomRepository.java:332] findByMinistryId() sql = SELECT c.*, CONCAT(m.first_name, ' ', m.last_name) as ministry_name FROM classroom c INNER JOIN ministry m ON c.ministry_id = m.id WHERE c.ministry_id = ? 
+2020-05-19 16:11:29,352 DEBUG [main] SignIn [SignIn.java:18] Sign in to your account
+2020-05-19 16:11:37,898 DEBUG [main] SignIn [SignIn.java:24] Sign in success
+2020-05-19 16:11:41,920 DEBUG [main] r.i.ClassroomRepository [ClassroomRepository.java:332] findByMinistryId() sql = SELECT c.*, CONCAT(m.first_name, ' ', m.last_name) as ministry_name FROM classroom c INNER JOIN ministry m ON c.ministry_id = m.id WHERE c.ministry_id = ? 
+2020-05-19 16:11:59,101 ERROR [main] r.i.StudentRepository [StudentRepository.java:224] update() method
+2020-05-19 16:13:08,013 DEBUG [main] SignIn [SignIn.java:18] Sign in to your account
+2020-05-19 16:13:16,460 DEBUG [main] SignIn [SignIn.java:24] Sign in success
+2020-05-19 16:13:22,410 DEBUG [main] r.i.ClassroomRepository [ClassroomRepository.java:332] findByMinistryId() sql = SELECT c.*, CONCAT(m.first_name, ' ', m.last_name) as ministry_name FROM classroom c INNER JOIN ministry m ON c.ministry_id = m.id WHERE c.ministry_id = ? 
+2020-05-19 16:13:31,756 ERROR [main] r.i.StudentRepository [StudentRepository.java:224] update() method
+2020-05-19 16:14:05,098 DEBUG [main] SignIn [SignIn.java:18] Sign in to your account
+2020-05-19 16:14:16,795 DEBUG [main] SignIn [SignIn.java:24] Sign in success
+2020-05-19 16:14:27,955 DEBUG [main] r.i.ClassroomRepository [ClassroomRepository.java:332] findByMinistryId() sql = SELECT c.*, CONCAT(m.first_name, ' ', m.last_name) as ministry_name FROM classroom c INNER JOIN ministry m ON c.ministry_id = m.id WHERE c.ministry_id = ? 
+2020-05-19 16:16:09,011 DEBUG [main] SignIn [SignIn.java:18] Sign in to your account
+2020-05-19 16:16:19,922 DEBUG [main] SignIn [SignIn.java:24] Sign in success
+2020-05-19 16:16:23,272 DEBUG [main] r.i.ClassroomRepository [ClassroomRepository.java:332] findByMinistryId() sql = SELECT c.*, CONCAT(m.first_name, ' ', m.last_name) as ministry_name FROM classroom c INNER JOIN ministry m ON c.ministry_id = m.id WHERE c.ministry_id = ? 
+2020-05-19 16:16:50,489 ERROR [main] r.i.StudentRepository [StudentRepository.java:224] update() method
+2020-05-19 16:17:15,114 DEBUG [main] SignIn [SignIn.java:18] Sign in to your account
+2020-05-19 16:17:29,679 DEBUG [main] SignIn [SignIn.java:24] Sign in success
+2020-05-19 16:17:40,470 DEBUG [main] r.i.ClassroomRepository [ClassroomRepository.java:332] findByMinistryId() sql = SELECT c.*, CONCAT(m.first_name, ' ', m.last_name) as ministry_name FROM classroom c INNER JOIN ministry m ON c.ministry_id = m.id WHERE c.ministry_id = ? 
+2020-05-19 16:18:29,096 DEBUG [main] r.i.ClassroomRepository [ClassroomRepository.java:332] findByMinistryId() sql = SELECT c.*, CONCAT(m.first_name, ' ', m.last_name) as ministry_name FROM classroom c INNER JOIN ministry m ON c.ministry_id = m.id WHERE c.ministry_id = ? 
+2020-05-19 16:25:56,735 DEBUG [main] SignIn [SignIn.java:18] Sign in to your account
+2020-05-19 16:26:08,428 DEBUG [main] SignIn [SignIn.java:24] Sign in success
+2020-05-19 16:26:18,300 DEBUG [main] r.i.ClassroomRepository [ClassroomRepository.java:332] findByMinistryId() sql = SELECT c.*, CONCAT(m.first_name, ' ', m.last_name) as ministry_name FROM classroom c INNER JOIN ministry m ON c.ministry_id = m.id WHERE c.ministry_id = ? 
+2020-05-19 16:28:58,993 DEBUG [main] r.i.ClassroomRepository [ClassroomRepository.java:332] findByMinistryId() sql = SELECT c.*, CONCAT(m.first_name, ' ', m.last_name) as ministry_name FROM classroom c INNER JOIN ministry m ON c.ministry_id = m.id WHERE c.ministry_id = ? 
+2020-05-19 16:30:52,666 DEBUG [main] SignIn [SignIn.java:18] Sign in to your account
+2020-05-19 16:31:02,015 DEBUG [main] SignIn [SignIn.java:24] Sign in success
+2020-05-19 16:31:22,116 DEBUG [main] SignIn [SignIn.java:18] Sign in to your account
+2020-05-19 16:31:39,927 DEBUG [main] SignIn [SignIn.java:28] Sign in failed
+2020-05-19 16:31:48,931 DEBUG [main] SignIn [SignIn.java:18] Sign in to your account
+2020-05-19 16:31:56,505 DEBUG [main] SignIn [SignIn.java:24] Sign in success
+2020-05-19 16:32:02,958 DEBUG [main] r.i.ClassroomRepository [ClassroomRepository.java:332] findByMinistryId() sql = SELECT c.*, CONCAT(m.first_name, ' ', m.last_name) as ministry_name FROM classroom c INNER JOIN ministry m ON c.ministry_id = m.id WHERE c.ministry_id = ? 
+2020-05-19 16:55:06,811 DEBUG [main] SignIn [SignIn.java:18] Sign in to your account
+2020-05-19 16:55:17,520 DEBUG [main] SignIn [SignIn.java:24] Sign in success
+2020-05-19 16:56:06,560 DEBUG [main] SignIn [SignIn.java:18] Sign in to your account
+2020-05-19 16:56:17,105 DEBUG [main] SignIn [SignIn.java:24] Sign in success
+2020-05-19 16:56:32,144 ERROR [main] r.i.StudentRepository [StudentRepository.java:393] findAll() method
+java.sql.SQLSyntaxErrorException: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '%'Trang'% or c.name like %'Trang'%' at line 1
+	at com.mysql.cj.jdbc.exceptions.SQLError.createSQLException(SQLError.java:120) ~[mysql-connector-java-8.0.16.jar:8.0.16]
+	at com.mysql.cj.jdbc.exceptions.SQLError.createSQLException(SQLError.java:97) ~[mysql-connector-java-8.0.16.jar:8.0.16]
+	at com.mysql.cj.jdbc.exceptions.SQLExceptionsMapping.translateException(SQLExceptionsMapping.java:122) ~[mysql-connector-java-8.0.16.jar:8.0.16]
+	at com.mysql.cj.jdbc.ClientPreparedStatement.executeInternal(ClientPreparedStatement.java:955) ~[mysql-connector-java-8.0.16.jar:8.0.16]
+	at com.mysql.cj.jdbc.ClientPreparedStatement.executeQuery(ClientPreparedStatement.java:1005) ~[mysql-connector-java-8.0.16.jar:8.0.16]
+	at repository.impl.StudentRepository.findByNameOrClass(StudentRepository.java:364) ~[classes/:na]
+	at service.impl.StudentService.findByNameOrClass(StudentService.java:45) [classes/:na]
+	at Main.findByNameOrClass(Main.java:284) [classes/:na]
+	at Main.handleMangerStudentMenu(Main.java:135) [classes/:na]
+	at Main.handleHomeMenu(Main.java:56) [classes/:na]
+	at Main.main(Main.java:31) [classes/:na]
+2020-05-19 17:01:03,416 DEBUG [main] SignIn [SignIn.java:18] Sign in to your account
+2020-05-19 17:01:12,693 DEBUG [main] SignIn [SignIn.java:24] Sign in success
+2020-05-19 17:01:23,575 ERROR [main] r.i.StudentRepository [StudentRepository.java:393] findAll() method
+java.sql.SQLException: Parameter index out of range (1 > number of parameters, which is 0).
+	at com.mysql.cj.jdbc.exceptions.SQLError.createSQLException(SQLError.java:129) ~[mysql-connector-java-8.0.16.jar:8.0.16]
+	at com.mysql.cj.jdbc.exceptions.SQLError.createSQLException(SQLError.java:97) ~[mysql-connector-java-8.0.16.jar:8.0.16]
+	at com.mysql.cj.jdbc.exceptions.SQLError.createSQLException(SQLError.java:89) ~[mysql-connector-java-8.0.16.jar:8.0.16]
+	at com.mysql.cj.jdbc.exceptions.SQLError.createSQLException(SQLError.java:63) ~[mysql-connector-java-8.0.16.jar:8.0.16]
+	at com.mysql.cj.jdbc.ClientPreparedStatement.checkBounds(ClientPreparedStatement.java:1370) ~[mysql-connector-java-8.0.16.jar:8.0.16]
+	at com.mysql.cj.jdbc.ClientPreparedStatement.getCoreParameterIndex(ClientPreparedStatement.java:1383) ~[mysql-connector-java-8.0.16.jar:8.0.16]
+	at com.mysql.cj.jdbc.ClientPreparedStatement.setString(ClientPreparedStatement.java:1750) ~[mysql-connector-java-8.0.16.jar:8.0.16]
+	at repository.impl.StudentRepository.findByNameOrClass(StudentRepository.java:362) ~[classes/:na]
+	at service.impl.StudentService.findByNameOrClass(StudentService.java:45) [classes/:na]
+	at Main.findByNameOrClass(Main.java:284) [classes/:na]
+	at Main.handleMangerStudentMenu(Main.java:135) [classes/:na]
+	at Main.handleHomeMenu(Main.java:56) [classes/:na]
+	at Main.main(Main.java:31) [classes/:na]
+2020-05-19 17:02:22,145 DEBUG [main] SignIn [SignIn.java:18] Sign in to your account
+2020-05-19 17:02:31,529 DEBUG [main] SignIn [SignIn.java:24] Sign in success
+2020-05-19 23:53:21,847 DEBUG [main] c.MinistryController [MinistryController.java:22] Sign in to your account
+2020-05-19 23:53:33,136 DEBUG [main] c.MinistryController [MinistryController.java:28] Sign in success
+2020-05-19 23:53:37,783 DEBUG [main] r.i.ClassroomRepository [ClassroomRepository.java:330] findByMinistryId() sql = SELECT c.*, CONCAT(m.first_name, ' ', m.last_name) as ministry_name FROM classroom c INNER JOIN ministry m ON c.ministry_id = m.id WHERE c.ministry_id = ? 
+2020-05-19 23:54:27,649 DEBUG [main] c.MinistryController [MinistryController.java:22] Sign in to your account
+2020-05-19 23:54:38,575 DEBUG [main] c.MinistryController [MinistryController.java:28] Sign in success
+2020-05-19 23:54:40,621 DEBUG [main] r.i.ClassroomRepository [ClassroomRepository.java:330] findByMinistryId() sql = SELECT c.*, CONCAT(m.first_name, ' ', m.last_name) as ministry_name FROM classroom c INNER JOIN ministry m ON c.ministry_id = m.id WHERE c.ministry_id = ? 
+2020-05-19 23:55:21,866 DEBUG [main] r.i.ClassroomRepository [ClassroomRepository.java:330] findByMinistryId() sql = SELECT c.*, CONCAT(m.first_name, ' ', m.last_name) as ministry_name FROM classroom c INNER JOIN ministry m ON c.ministry_id = m.id WHERE c.ministry_id = ? 
+2020-05-20 10:32:19,805 DEBUG [main] c.MinistryController [MinistryController.java:20] Sign in to your account
+2020-05-20 10:32:40,207 DEBUG [main] c.MinistryController [MinistryController.java:30] Sign in failed
+2020-05-20 10:33:13,671 DEBUG [main] c.MinistryController [MinistryController.java:20] Sign in to your account
+2020-05-20 10:33:18,068 DEBUG [main] c.MinistryController [MinistryController.java:30] Sign in failed
+2020-05-20 10:33:30,109 DEBUG [main] c.MinistryController [MinistryController.java:20] Sign in to your account
+2020-05-20 10:33:35,987 DEBUG [main] c.MinistryController [MinistryController.java:26] Sign in success
+2020-05-20 10:33:36,058 ERROR [main] r.i.StudentRepository [MinistryRepository.java:65] findAll() method
+java.sql.SQLSyntaxErrorException: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'FROM Ministry m INNER JOIN Classroom c ON m.id = c.ministry_id WHERE role = 0' at line 1
+	at com.mysql.cj.jdbc.exceptions.SQLError.createSQLException(SQLError.java:120) ~[mysql-connector-java-8.0.16.jar:8.0.16]
+	at com.mysql.cj.jdbc.exceptions.SQLError.createSQLException(SQLError.java:97) ~[mysql-connector-java-8.0.16.jar:8.0.16]
+	at com.mysql.cj.jdbc.exceptions.SQLExceptionsMapping.translateException(SQLExceptionsMapping.java:122) ~[mysql-connector-java-8.0.16.jar:8.0.16]
+	at com.mysql.cj.jdbc.StatementImpl.executeQuery(StatementImpl.java:1218) ~[mysql-connector-java-8.0.16.jar:8.0.16]
+	at repository.impl.MinistryRepository.findAll(MinistryRepository.java:38) ~[classes/:na]
+	at service.impl.MinistryService.findAll(MinistryService.java:14) [classes/:na]
+	at controller.MinistryController.showMinistryList(MinistryController.java:117) [classes/:na]
+	at Main.handleHomeMenu(Main.java:46) [classes/:na]
+	at Main.handleHomeMenu(Main.java:55) [classes/:na]
+	at Main.handleHomeMenu(Main.java:55) [classes/:na]
+	at Main.main(Main.java:27) [classes/:na]
+2020-05-20 10:39:21,325 DEBUG [main] c.MinistryController [MinistryController.java:20] Sign in to your account
+2020-05-20 10:39:31,841 DEBUG [main] c.MinistryController [MinistryController.java:26] Sign in success
+2020-05-20 10:47:31,618 DEBUG [main] c.MinistryController [MinistryController.java:20] Sign in to your account
+2020-05-20 10:47:41,427 DEBUG [main] c.MinistryController [MinistryController.java:26] Sign in success
+2020-05-20 10:48:16,556 ERROR [main] r.i.StudentRepository [MinistryRepository.java:278] update() method
+2020-05-20 10:50:28,987 DEBUG [main] c.MinistryController [MinistryController.java:20] Sign in to your account
+2020-05-20 10:50:50,068 DEBUG [main] c.MinistryController [MinistryController.java:26] Sign in success
+2020-05-20 10:53:03,839 DEBUG [main] c.MinistryController [MinistryController.java:20] Sign in to your account
+2020-05-20 10:53:11,902 DEBUG [main] c.MinistryController [MinistryController.java:26] Sign in success
+2020-05-20 10:57:47,357 DEBUG [main] c.MinistryController [MinistryController.java:20] Sign in to your account
+2020-05-20 10:58:08,820 DEBUG [main] c.MinistryController [MinistryController.java:26] Sign in success
+2020-05-20 10:58:14,657 ERROR [main] r.i.StudentRepository [MinistryRepository.java:315] delete() - method
+java.sql.SQLIntegrityConstraintViolationException: Cannot delete or update a parent row: a foreign key constraint fails (`trainingmanager`.`classroom`, CONSTRAINT `fk_classroom_ministry` FOREIGN KEY (`ministry_id`) REFERENCES `ministry` (`id`))
+	at com.mysql.cj.jdbc.exceptions.SQLError.createSQLException(SQLError.java:117) ~[mysql-connector-java-8.0.16.jar:8.0.16]
+	at com.mysql.cj.jdbc.exceptions.SQLError.createSQLException(SQLError.java:97) ~[mysql-connector-java-8.0.16.jar:8.0.16]
+	at com.mysql.cj.jdbc.exceptions.SQLExceptionsMapping.translateException(SQLExceptionsMapping.java:122) ~[mysql-connector-java-8.0.16.jar:8.0.16]
+	at com.mysql.cj.jdbc.ClientPreparedStatement.executeInternal(ClientPreparedStatement.java:955) ~[mysql-connector-java-8.0.16.jar:8.0.16]
+	at com.mysql.cj.jdbc.ClientPreparedStatement.executeUpdateInternal(ClientPreparedStatement.java:1094) ~[mysql-connector-java-8.0.16.jar:8.0.16]
+	at com.mysql.cj.jdbc.ClientPreparedStatement.executeUpdateInternal(ClientPreparedStatement.java:1042) ~[mysql-connector-java-8.0.16.jar:8.0.16]
+	at com.mysql.cj.jdbc.ClientPreparedStatement.executeLargeUpdate(ClientPreparedStatement.java:1345) ~[mysql-connector-java-8.0.16.jar:8.0.16]
+	at com.mysql.cj.jdbc.ClientPreparedStatement.executeUpdate(ClientPreparedStatement.java:1027) ~[mysql-connector-java-8.0.16.jar:8.0.16]
+	at repository.impl.MinistryRepository.delete(MinistryRepository.java:312) ~[classes/:na]
+	at service.impl.MinistryService.delete(MinistryService.java:34) [classes/:na]
+	at controller.MinistryController.deleteStudent(MinistryController.java:231) [classes/:na]
+	at Main.handleMangerMinistryMenu(Main.java:93) [classes/:na]
+	at Main.handleHomeMenu(Main.java:47) [classes/:na]
+	at Main.main(Main.java:27) [classes/:na]
+2020-05-20 10:59:46,797 DEBUG [main] c.MinistryController [MinistryController.java:20] Sign in to your account
+2020-05-20 10:59:54,774 DEBUG [main] c.MinistryController [MinistryController.java:26] Sign in success
+2020-05-20 11:02:41,547 DEBUG [main] c.MinistryController [MinistryController.java:20] Sign in to your account
+2020-05-20 11:02:49,987 DEBUG [main] c.MinistryController [MinistryController.java:26] Sign in success
+2020-05-20 11:02:50,072 ERROR [main] r.i.StudentRepository [MinistryRepository.java:64] findAll() method
+java.sql.SQLSyntaxErrorException: Unknown column 'm.role' in 'where clause'
+	at com.mysql.cj.jdbc.exceptions.SQLError.createSQLException(SQLError.java:120) ~[mysql-connector-java-8.0.16.jar:8.0.16]
+	at com.mysql.cj.jdbc.exceptions.SQLError.createSQLException(SQLError.java:97) ~[mysql-connector-java-8.0.16.jar:8.0.16]
+	at com.mysql.cj.jdbc.exceptions.SQLExceptionsMapping.translateException(SQLExceptionsMapping.java:122) ~[mysql-connector-java-8.0.16.jar:8.0.16]
+	at com.mysql.cj.jdbc.StatementImpl.executeQuery(StatementImpl.java:1218) ~[mysql-connector-java-8.0.16.jar:8.0.16]
+	at repository.impl.MinistryRepository.findAll(MinistryRepository.java:36) ~[classes/:na]
+	at service.impl.MinistryService.findAll(MinistryService.java:14) [classes/:na]
+	at controller.MinistryController.showMinistryList(MinistryController.java:117) [classes/:na]
+	at Main.handleHomeMenu(Main.java:46) [classes/:na]
+	at Main.main(Main.java:27) [classes/:na]
+2020-05-20 11:03:15,758 DEBUG [main] c.MinistryController [MinistryController.java:20] Sign in to your account
+2020-05-20 11:03:23,842 DEBUG [main] c.MinistryController [MinistryController.java:26] Sign in success
+2020-05-20 11:10:25,463 DEBUG [main] c.MinistryController [MinistryController.java:20] Sign in to your account
+2020-05-20 11:10:33,128 DEBUG [main] c.MinistryController [MinistryController.java:26] Sign in success
+2020-05-20 11:10:42,534 ERROR [main] r.i.StudentRepository [MinistryRepository.java:316] delete() - method
+java.sql.SQLIntegrityConstraintViolationException: Cannot delete or update a parent row: a foreign key constraint fails (`trainingmanager`.`classroom`, CONSTRAINT `fk_classroom_ministry` FOREIGN KEY (`ministry_id`) REFERENCES `ministry` (`id`))
+	at com.mysql.cj.jdbc.exceptions.SQLError.createSQLException(SQLError.java:117) ~[mysql-connector-java-8.0.16.jar:8.0.16]
+	at com.mysql.cj.jdbc.exceptions.SQLError.createSQLException(SQLError.java:97) ~[mysql-connector-java-8.0.16.jar:8.0.16]
+	at com.mysql.cj.jdbc.exceptions.SQLExceptionsMapping.translateException(SQLExceptionsMapping.java:122) ~[mysql-connector-java-8.0.16.jar:8.0.16]
+	at com.mysql.cj.jdbc.ClientPreparedStatement.executeInternal(ClientPreparedStatement.java:955) ~[mysql-connector-java-8.0.16.jar:8.0.16]
+	at com.mysql.cj.jdbc.ClientPreparedStatement.executeUpdateInternal(ClientPreparedStatement.java:1094) ~[mysql-connector-java-8.0.16.jar:8.0.16]
+	at com.mysql.cj.jdbc.ClientPreparedStatement.executeUpdateInternal(ClientPreparedStatement.java:1042) ~[mysql-connector-java-8.0.16.jar:8.0.16]
+	at com.mysql.cj.jdbc.ClientPreparedStatement.executeLargeUpdate(ClientPreparedStatement.java:1345) ~[mysql-connector-java-8.0.16.jar:8.0.16]
+	at com.mysql.cj.jdbc.ClientPreparedStatement.executeUpdate(ClientPreparedStatement.java:1027) ~[mysql-connector-java-8.0.16.jar:8.0.16]
+	at repository.impl.MinistryRepository.delete(MinistryRepository.java:313) ~[classes/:na]
+	at service.impl.MinistryService.delete(MinistryService.java:34) [classes/:na]
+	at controller.MinistryController.deleteStudent(MinistryController.java:231) [classes/:na]
+	at Main.handleMangerMinistryMenu(Main.java:93) [classes/:na]
+	at Main.handleHomeMenu(Main.java:47) [classes/:na]
+	at Main.main(Main.java:27) [classes/:na]
+2020-05-20 11:26:12,865 DEBUG [main] c.MinistryController [MinistryController.java:20] Sign in to your account
+2020-05-20 11:26:22,080 DEBUG [main] c.MinistryController [MinistryController.java:26] Sign in success
+2020-05-20 11:26:32,948 WARN [main] r.i.StudentRepository [MinistryRepository.java:318] delete() - method delete() - method Giáo vụ đang quản lý lớp học, nên không thể xóa
+2020-05-20 11:39:32,317 DEBUG [main] c.MinistryController [MinistryController.java:20] Sign in to your account
+2020-05-20 11:39:40,793 DEBUG [main] c.MinistryController [MinistryController.java:26] Sign in success
+2020-05-20 11:40:43,254 DEBUG [main] c.MinistryController [MinistryController.java:20] Sign in to your account
+2020-05-20 11:40:48,581 DEBUG [main] c.MinistryController [MinistryController.java:30] Sign in failed
+2020-05-20 11:41:00,153 DEBUG [main] c.MinistryController [MinistryController.java:20] Sign in to your account
+2020-05-20 11:41:05,625 DEBUG [main] c.MinistryController [MinistryController.java:26] Sign in success
+2020-05-20 11:52:54,293 DEBUG [main] c.MinistryController [MinistryController.java:20] Sign in to your account
+2020-05-20 13:02:57,044 DEBUG [main] c.MinistryController [MinistryController.java:20] Sign in to your account
+2020-05-20 13:03:04,829 DEBUG [main] c.MinistryController [MinistryController.java:26] Sign in success

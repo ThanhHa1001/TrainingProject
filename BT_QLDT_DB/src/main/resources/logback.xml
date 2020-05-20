@@ -2,7 +2,7 @@
 <configuration>
 	<appender name="FILEAPPENDER"
 		class="ch.qos.logback.core.FileAppender">
-		<file>log4j.log</file>
+		<file> ../BT_QLDT_DB/logs/log4j.log</file>
 		<append>true</append>
 		<encoder>
 			<pattern>%date %level [%thread] %logger{10} [%file:%line] %msg%n</pattern>
