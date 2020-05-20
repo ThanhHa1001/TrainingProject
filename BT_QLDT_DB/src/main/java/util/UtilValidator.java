@@ -50,7 +50,7 @@ public class UtilValidator {
 				hasCap = true;
 			}
 			if (Character.isLowerCase(c)) {
-				hasLow = false;
+				hasLow = true;
 			}
 		}
 		

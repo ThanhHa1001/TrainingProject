@@ -10,7 +10,6 @@ import org.slf4j.LoggerFactory;
 
 import entity.MinistryEntity;
 import util.InputUtil;
-import util.UtilValidator;
 
 public class MinistryController extends BaseController {
 	Logger logger = LoggerFactory.getLogger(MinistryController.class);
@@ -48,14 +47,8 @@ public class MinistryController extends BaseController {
 	public MinistryEntity signUp(Scanner scanner) {
 		logger.debug("signUp(MinistryService ministryService) - Create your account");
 		System.out.println("Create your account");
-		String email = InputUtil.requireUserInput("Email", scanner);
-		while (!UtilValidator.validateEmail(email)) {
-			String msg = "Invalid email address - email: " + email;
-			logger.debug(msg);
-			System.out.println(msg);
-			email = InputUtil.requireUserInput("Email", scanner);
-		}
-
+		String email = InputUtil.requireUserInputEmail("Email", scanner);
+		
 		if (getMinistryService().checkAccountExist(email)) {
 			String msg = email + " is already a QLDT account. Please try a different email address.";
 			logger.debug("signUp(AccountService accountService) - " + msg);
@@ -64,23 +57,23 @@ public class MinistryController extends BaseController {
 			return null;
 		} else {
 			String firstName = InputUtil.requireUserInput("First Name", scanner);
-			while (!UtilValidator.validateName(firstName)) {
-				String msg = "Invalid email firstname - firstName: " + firstName;
-				logger.debug(msg);
-				System.out.println(msg);
-				firstName = InputUtil.requireUserInput("First Name", scanner);
-			}
+//			while (!UtilValidator.validateName(firstName)) {
+//				String msg = "Invalid firstname - firstName: " + firstName;
+//				logger.debug(msg);
+//				System.out.println(msg);
+//				firstName = InputUtil.requireUserInput("First Name", scanner);
+//			}
 
 			String lastName = InputUtil.requireUserInput("Last Name", scanner);
-			String password = InputUtil.requireUserInput("Password", scanner);
+			String password = InputUtil.requireUserInputPassword("Password", scanner);
 
 			String phone = InputUtil.requireUserInput("Phone", scanner);
-			while (!UtilValidator.validatePhone(phone)) {
-				String msg = "Invalid email phone - phone: " + phone;
-				logger.debug(msg);
-				System.out.println(msg);
-				phone = InputUtil.requireUserInput("Phone", scanner);
-			}
+//			while (!UtilValidator.validatePhone(phone)) {
+//				String msg = "Invalid phone - phone: " + phone;
+//				logger.debug(msg);
+//				System.out.println(msg);
+//				phone = InputUtil.requireUserInput("Phone", scanner);
+//			}
 
 			// Create the ministry info
 			MinistryEntity ministryEntity = new MinistryEntity();
@@ -117,15 +110,15 @@ public class MinistryController extends BaseController {
 		List<MinistryEntity> ministryList = getMinistryService().findAll();
 		System.out.printf("%-5s%-15s%-15s%-30s%-15s%-5s", "ID", "First name", "Last name", "Email", "Phone", "Classroom");
 		for (MinistryEntity ministryEntity : ministryList) {
-			System.out.printf("\n%-5s%-15s%-15s%-30s%-15s", ministryEntity.getId(), ministryEntity.getFirstName(),
+			System.out.printf("\n%-5s%-15s%-15s%-30s%-15s%-5s", ministryEntity.getId(), ministryEntity.getFirstName(),
 					ministryEntity.getLastName(), ministryEntity.getEmail(), ministryEntity.getPhone(), ministryEntity.getClassroomName());
 		}
 	}
 
 	public void insertMinistry(Scanner scanner) {
 		System.out.println("Nhập thông tin giáo vụ bạn muốn thêm mới");
-		String firstName = InputUtil.requireUserInputName("First Name", scanner);
-		String lastName = InputUtil.requireUserInputName("Last Name", scanner);
+		String firstName = InputUtil.requireUserInput("First Name", scanner);
+		String lastName = InputUtil.requireUserInput("Last Name", scanner);
 		String email = InputUtil.requireUserInputEmail("Email", scanner);
 		String password = InputUtil.requireUserInputPassword("Pasword", scanner);
 		String phone = InputUtil.requireUserInput("Phone", scanner);
