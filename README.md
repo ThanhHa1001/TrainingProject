@@ -3,6 +3,7 @@
 
 ### BT_QLDT
 - [HOME](https://github.com/ThanhHa1001/TrainingProject)
+- [Database](https://github.com/ThanhHa1001/TrainingProject/tree/exe2/BT_QLDT_DB/database)
 
 #### 1. Exe1 
 Viết một chương trình Java (Java console) cho phép các giáo vụ quản lý việc đào tạo ở một trung tâm đào tạo theo các mô tả như sau:
