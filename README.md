@@ -13,6 +13,7 @@
 #### Projects
 - [Java core - ReTraining project](https://github.com/ThanhHa1001/TrainingProject/tree/exe0)
 - [Exe1 - BT_QLDT project](https://github.com/ThanhHa1001/TrainingProject/tree/exe1)
+- [Exe2 - BT_QLDT project](https://github.com/ThanhHa1001/TrainingProject/tree/exe2)
 
 #### Descriptions
 ##### 0. Java core
